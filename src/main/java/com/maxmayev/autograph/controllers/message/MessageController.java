@@ -1,7 +1,7 @@
 package com.maxmayev.autograph.controllers.message;
 
 import com.maxmayev.autograph.domain.Message;
-import com.maxmayev.autograph.services.consumer.MessageService;
+import com.maxmayev.autograph.services.message.MessageService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
