@@ -26,5 +26,9 @@ public class Message {
     private String autoNumber;
     @Column(name = "MESSTEXT")
     private String messText;
+    @Column(name = "TO")
+    private String to;
+    @Column(name = "GOODORBAD")
+    private boolean goodOrBad;
 
 }

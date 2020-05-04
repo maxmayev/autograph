@@ -1,14 +1,15 @@
-INSERT INTO message (id, name, autoNumber, messText) VALUES (1, 'x322mm178', 'Максим', 'Привет');
-INSERT INTO message (id, name, autoNumber, messText) VALUES (125, 'з323вы333', 'Илья', 'Как дела?');
-INSERT INTO message (id, name, autoNumber, messText) VALUES (126, 'в322лл232', 'Игорь', 'Не подрезай');
-INSERT INTO message (id, name, autoNumber, messText) VALUES (127, 'ь232вв32', 'Виктор', 'Убери машину');
-INSERT INTO message (id, name, autoNumber, messText) VALUES (145, 'в434вы99', 'Женя', 'Спасибо что пропустил');
-INSERT INTO message (id, name, autoNumber, messText) VALUES (151, 'ы323оо33', 'Петр', 'Хорошего дня');
-INSERT INTO message (id, name, autoNumber, messText) VALUES (153, 'л323оо23', 'Ира', 'Не забывай поворотник');
-INSERT INTO message (id, name, autoNumber, messText) VALUES (154, 'г323фы11', 'Катя', 'Дурак');
-INSERT INTO message (id, name, autoNumber, messText) VALUES (157, 'о323тт32', 'Вика', 'Привет');
-INSERT INTO message (id, name, autoNumber, messText) VALUES (158, 'г323тт44', 'Маша', 'Ты меня запер');
-INSERT INTO message (id, name, autoNumber, messText) VALUES (172, 'о233вв23', 'Саша', 'Поворотник');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (1,  'Максим','x322mm178', 'Привет', '0', 'к093му178');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (125, 'Илья', 'з323вы333', 'Как дела?', '0', 'к093му178');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (126, 'Игорь', 'в322лл232', 'Не подрезай', '1', 'к093му178');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (127,'Виктор', 'ь232вв32', 'Убери машину', '1', 'к093му178');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (145, 'Женя', 'в434вы99', 'Спасибо что пропустил', '0', 'к093му178');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (151, 'Петр','ы323оо33',  'Хорошего дня', '0', 'к093му178');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (153, 'Ира', 'л323оо23', 'Не забывай поворотник', '1', 'к093му178');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (154, 'Катя', 'г323фы11', 'Дурак', '1', 'к093му178');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (157, 'Вика', 'о323тт32', 'Привет', '0', 'к093му178');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (158, 'Маша', 'г323тт44', 'Ты меня запер', '1', 'к093му178');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (172,  'Саша', 'о233вв23', 'Поворотник', '1', 'к093му178');
+INSERT INTO message (id, name, autoNumber, messText, goodOrBad,to) VALUES (175,  'Миша', 'о233вв23', 'Поворотник', '0', 'к093му178');
 
 
 INSERT INTO user (id, username, password) VALUES (1, 'maxmayev', 'effb50ab9c2df6e16ba781f66df76e2e8aa671150197bb7b5a1791b693cfc2fda1ed0e16fe78ad1a');

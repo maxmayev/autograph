@@ -3,7 +3,6 @@ package com.maxmayev.autograph.services.message;
 import com.maxmayev.autograph.domain.Message;
 import com.maxmayev.autograph.domain.User;
 import com.maxmayev.autograph.repository.MessageRepository;
-import com.maxmayev.autograph.services.consumer.MessageService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -49,8 +48,14 @@ public class MessageServiceImpl implements MessageService {
         User user = (User)authentication.getPrincipal();
         log.debug(user.toString());
         List<Message> messages = new ArrayList<>();
-        messageRepository.findAll().forEach(messages::add);
+        List<Message> goodMessages = new ArrayList<>();
+        List<Message> badMessages = new ArrayList<>();
+        messageRepository.findAll().forEach(message -> {if (message.getTo().equals(user.getUsername())) {if (message.isGoodOrBad())badMessages.add(message);else goodMessages.add(message); messages.add(message);}});
+        /*messageRepository.findByGoodOrBadEquals(1).forEach(goodMessages::add);
+        messageRepository.findByGoodOrBadEquals(0).forEach(badMessages::add);*/
         model.addAttribute("messages",messages);
+        model.addAttribute("goodMessages",goodMessages);
+        model.addAttribute("badMessages",badMessages);
         model.addAttribute("user",user);
     }
 

@@ -4,7 +4,9 @@ create table message
         primary key,
     name         varchar(45) null,
     autoNumber      varchar(45) null,
-    messText   varchar(255) null
+    messText   varchar(255) null,
+    goodOrBad   number(1) null,
+    to varchar(45) null
 );
 
 create table user
